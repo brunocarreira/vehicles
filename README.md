@@ -4,7 +4,7 @@ Vehicles Exercise
 
 Application that reads a **JSON** string from a URL, parse it into vehicle list, and produces output based on some criterias:
 > - **Print a list of all the cars, in ascending price order, in the following format:**
-	1. {Vehicle name} – {Price}
+1. {Vehicle name} – {Price}
 > - **Using a reference table, calculate the specification of the vehicles based on their SIPP. Print the specification out using the following format:**
 1. {Vehicle name} – {SIPP} – {Car type} – {Car type/doors} – {Transmission} – {Fuel} – {Air con}
 > - **Print out the highest rated supplier per car type, descending order, in the following format:**
@@ -29,11 +29,13 @@ Instructions
 -------------
 
 **Prerequisites** 
+
 > - Maven 3
 > - JDK 1.8
 > - IDE
 
 Go to vehicles path and install the application jar and its dependencies in your local maven repository (Unit Tests and Integrations Tests will be executed):
+
 > **mvn clean install**
 
 **Executing Part1** 
@@ -42,25 +44,40 @@ Go to vehicles path and install the application jar and its dependencies in your
 
 > **Command line**: mvn exec:exec -Ppart1
 
+
 **Executing Part2** 
 
 > mvn clean spring-boot:run
-> http://localhost:8080/vehicles/priceOrder 
+
+
+> http://localhost:8080/vehicles/priceOrder
+ 
 > http://localhost:8080/vehicles/priceOrderJSON
+
 > http://localhost:8080/vehicles/sipp
+
 > http://localhost:8080/vehicles/sippJSON
+
 > http://localhost:8080/vehicles/highSupplier
+
 > http://localhost:8080/vehicles/highSupplierJSON
+
 > http://localhost:8080/vehicles/score
+
 > http://localhost:8080/vehicles/scoreJSON
 
+
 > **Shutdown Spring Boot**: http://localhost:8080/shutdown
+
 
 > **Hint:**
 
 > - To enable logs, comment the lines below, in application.properties:
+
 **logging.level.root=OFF**
+
 **spring.main.banner-mode=off**
+
 
 ----------
 
