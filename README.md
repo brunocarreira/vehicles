@@ -74,9 +74,9 @@ Go to vehicles path and install the application jar and its dependencies in your
 
 > - To enable logs, comment the lines below, in application.properties:
 
-**logging.level.root=OFF**
+> **logging.level.root=OFF**
 
-**spring.main.banner-mode=off**
+> **spring.main.banner-mode=off**
 
 
 ----------
