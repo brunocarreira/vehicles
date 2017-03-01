@@ -13,7 +13,9 @@ Application that reads a **JSON** string from a URL, parse it into vehicle list,
 1. {Vehicle name} – {Vehicle score} – {Supplier rating} – {Sum of scores}
 
 #### <i class="icon-refresh"></i> Main classes
+
 This Application is divided in 2 parts:
+
 **Part1** - A standalone Java console application, with the functionality to read a specified JSON file, parse and then perform the set tasks above on the parsed data. All tasks should be printed out to the console using System.out.
 > *Represented by* **com.brunocarreira.vehicles.Part1App.java**
 
@@ -29,6 +31,7 @@ Instructions
 **Prerequisites** 
 > - Maven 3
 > - JDK 1.8
+> - IDE
 
 Go to vehicles path and install the application jar and its dependencies in your local maven repository (Unit Tests and Integrations Tests will be executed):
 > **mvn clean install**
