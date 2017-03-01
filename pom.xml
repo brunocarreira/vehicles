@@ -62,7 +62,19 @@
               <encoding>UTF-8</encoding>
           </configuration>
       </plugin>
-
+	<plugin>
+	    <groupId>org.codehaus.mojo</groupId>
+	    <artifactId>exec-maven-plugin</artifactId>
+	    <configuration>
+	        <executable>java</executable>
+	        <arguments>
+	            <argument>-Djava.library.path=${project.build.directory}/lib</argument>
+	            <argument>-classpath</argument>
+	            <classpath />
+	            <argument>com.brunocarreira.vehicles.Part1App</argument>
+	        </arguments>
+	    </configuration>
+	</plugin>
     </plugins>
   </build> 
 </project>

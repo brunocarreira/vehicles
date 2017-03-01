@@ -31,7 +31,6 @@ Instructions
 **Prerequisites** 
 > - Maven 3
 > - JDK 1.8
-> - IDE
 
 Go to vehicles path and install the application jar and its dependencies in your local maven repository (Unit Tests and Integrations Tests will be executed):
 > **mvn clean install**
@@ -39,6 +38,7 @@ Go to vehicles path and install the application jar and its dependencies in your
 **Executing Part1** 
 
 > **Eclipse**: Right click on Part1App.java > Run as > Java Application
+> **Command line**: mvn exec:exec
 
 
 **Executing Part2** 
