@@ -108,7 +108,7 @@ Spring-boot was used to setup the project and organize into layers.
 
 > **```package com.brunocarreira.vehicles.resource```**
 > - Resource for REST endpoints:
-> > **```VehicleResource```**ests
+> > **```VehicleResource```**
 
 
 ----------
