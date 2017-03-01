@@ -110,5 +110,6 @@ public class Part1App
 			System.out.println(VehicleService.DATASOURCE_ERROR);
 		}
 
+		context.close();
     }
 }

@@ -31,6 +31,7 @@ Instructions
 **Prerequisites** 
 > - Maven 3
 > - JDK 1.8
+> - IDE
 
 Go to vehicles path and install the application jar and its dependencies in your local maven repository (Unit Tests and Integrations Tests will be executed):
 > **mvn clean install**
@@ -38,12 +39,12 @@ Go to vehicles path and install the application jar and its dependencies in your
 **Executing Part1** 
 
 > **Eclipse**: Right click on Part1App.java > Run as > Java Application
-> **Command line**: mvn exec:exec
 
+> **Command line**: mvn exec:exec -Ppart1
 
 **Executing Part2** 
 
-> mvn spring-boot:run
+> mvn clean spring-boot:run
 > http://localhost:8080/vehicles/priceOrder 
 > http://localhost:8080/vehicles/priceOrderJSON
 > http://localhost:8080/vehicles/sipp
@@ -52,6 +53,8 @@ Go to vehicles path and install the application jar and its dependencies in your
 > http://localhost:8080/vehicles/highSupplierJSON
 > http://localhost:8080/vehicles/score
 > http://localhost:8080/vehicles/scoreJSON
+
+> **Shutdown Spring Boot**: http://localhost:8080/shutdown
 
 > **Hint:**
 
